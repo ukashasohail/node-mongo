@@ -1,14 +1,12 @@
-const mongoose = require("mongoose");
+const express = require("express");
 
-mongoose
-    .connect('mongodb://127.0.0.1/lester_db', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true
-    })
-    .then(() => {
-        console.log("MongoDB Connected");
-    })
-    .catch(err => {
-        console.log(err);
-    });
+const app = express();
+
+app.get("/", (req, res) => {
+  return res.status(200).json({
+    status: 200,
+    message: "SUCCESS !!!",
+  });
+});
+
+app.listen(5000, () => console.log("Server running port 5000"));

@@ -1,15 +1,23 @@
 {
-  "name": "node-mongo",
+  "name": "docker-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ukashasohail/node-docker-demo.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ukashasohail/node-docker-demo/issues"
+  },
+  "homepage": "https://github.com/ukashasohail/node-docker-demo#readme",
   "dependencies": {
-    "mongoose": "^5.11.8"
+    "express": "^4.17.1"
   }
 }
